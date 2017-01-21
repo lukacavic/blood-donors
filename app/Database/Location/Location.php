@@ -1,7 +1,9 @@
 <?php
 
-namespace App\Database\Models;
+namespace App\Database\Location;
 
+use App\Database\Core\BaseModel;
+use App\Database\Donor\Donor;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Location extends BaseModel
@@ -12,7 +14,6 @@ class Location extends BaseModel
 
     protected $guarded = ['id'];
 
-    //Relations
     public function donors()
     {
         return $this->hasMany(Donor::class, 'location_id');

@@ -1,6 +1,6 @@
-<?php namespace App\Database\Repositories;
+<?php namespace App\Database\Action;
 
-use App\Database\Models\Action;
+use App\Database\Core\BaseRepository;
 
 class ActionsRepository extends BaseRepository
 {
@@ -10,12 +10,6 @@ class ActionsRepository extends BaseRepository
         $this->model = $model;
     }
 
-    /**
-     * Add new action.
-     *
-     * @param $request
-     * @return static
-     */
     public function create(array $request)
     {
         $startTime = date("h:i:s", strtotime($request->get('startTime')));

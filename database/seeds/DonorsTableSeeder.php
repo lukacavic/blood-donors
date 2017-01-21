@@ -1,5 +1,6 @@
 <?php
 
+use App\Database\Donor\Donor;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -12,17 +13,15 @@ class DonorsTableSeeder extends Seeder
      */
     public function run()
     {
-        Eloquent::unguard();
-        
         DB::table('donors')->truncate();
 
-        $user = new \App\Database\Models\Donor();
+        $user = new Donor();
         $user->first_name = "Admin";
         $user->last_name = "Admin";
         $user->username = "admin";
         $user->administrator = 1;
-        $user->location_id = \App\Database\Models\Location::first()->id;
-        $user->bloodtype_id = \App\Database\Models\BloodType::first()->id;
+        $user->location_id = \App\Database\Location\Location::first()->id;
+        $user->bloodtype_id = \App\Database\LOV\LOV::bloodtypes()->first()->id;
         $user->email = "admin@admin.com";
         $user->password = 'admin';
         $user->sex = 1;

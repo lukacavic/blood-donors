@@ -2,8 +2,6 @@
     <section class="sidebar">
         <div class="user-panel">
             <div class="pull-left image">
-
-                !!}
             </div>
             <div class="pull-left info" style="padding-top:15px;">
                 <p>{!! auth()->user()->fullName !!}</p>

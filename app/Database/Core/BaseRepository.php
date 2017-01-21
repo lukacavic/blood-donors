@@ -1,4 +1,4 @@
-<?php namespace App\Database\Repositories;
+<?php namespace App\Database\Core;
 
 
 abstract class BaseRepository

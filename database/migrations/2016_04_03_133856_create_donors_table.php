@@ -30,6 +30,7 @@ class CreateDonorsTable extends Migration
             $table->string('username')->unique();
             $table->string('password');
             $table->timestamp('birthday')->nullable();
+            $table->integer('community_id')->unsigned();
             $table->rememberToken();
             $table->softDeletes();
             $table->timestamps();

@@ -1,8 +1,7 @@
 <?php namespace App\Http\Controllers\Backend;
 
-use App\Database\Models\Action;
-use App\Database\Repositories\DonorsRepository;
-use App\Database\Repositories\DonorsRepositoryInterface;
+use App\Database\Action\Action;
+use App\Database\Donor\DonorsRepository;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use JavaScript;

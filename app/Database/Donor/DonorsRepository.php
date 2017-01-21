@@ -1,6 +1,8 @@
-<?php namespace App\Database\Repositories;
+<?php
 
-use App\Database\Models\Donor;
+namespace App\Database\Donor;
+
+use App\Database\Core\BaseRepository;
 use Intervention\Image\Facades\Image;
 
 class DonorsRepository extends BaseRepository
@@ -177,5 +179,5 @@ class DonorsRepository extends BaseRepository
     {
         return $this->model->with(['actions', 'bloodtype'])->findOrFail($donorId);
     }
-    
+
 }

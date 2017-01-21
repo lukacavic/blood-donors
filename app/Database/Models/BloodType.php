@@ -2,6 +2,8 @@
 
 namespace App\Database\Models;
 
+use App\Database\Core\BaseModel;
+use App\Database\Donor\Donor;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class BloodType extends BaseModel

@@ -2,8 +2,7 @@
 
 namespace App\Http\Controllers\Backend;
 
-use App\Database\Models\Location;
-use App\Database\Repositories\LocationsRepositoryInterface;
+use App\Database\Location\Location;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Backend\Locations\CreateNewLocationRequest;
 use App\Http\Requests\Backend\Locations\EditLocationRequest;

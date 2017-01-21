@@ -67,7 +67,7 @@ return [
     'providers' => [
         'donors' => [
             'driver' => 'eloquent',
-            'model' => App\Database\Models\Donor::class,
+            'model' => App\Database\Donor\Donor::class,
         ],
 
         // 'users' => [

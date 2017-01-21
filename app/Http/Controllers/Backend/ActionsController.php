@@ -1,8 +1,8 @@
 <?php namespace App\Http\Controllers\Backend;
 
-use App\Database\Models\Action;
-use App\Database\Repositories\ActionsRepository;
-use App\Database\Repositories\DonorsRepository;
+use App\Database\Action\Action;
+use App\Database\Action\ActionsRepository;
+use App\Database\Donor\DonorsRepository;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Backend\Actions\CreateNewActionRequest;
 use Illuminate\Http\Request;
@@ -115,7 +115,6 @@ class ActionsController extends Controller
      */
     public function addToActionList($actionId, Request $request)
     {
-
         $action = $this->actions->getById($actionId);
 
         if ($request->get('donors') == null) {

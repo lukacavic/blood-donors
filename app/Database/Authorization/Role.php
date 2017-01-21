@@ -1,6 +1,9 @@
 <?php
 
-namespace App\Database\Models;
+namespace App\Database\Authorization;
+
+use App\Database\Core\BaseModel;
+use App\Database\Donor\Donor;
 
 class Role extends BaseModel
 {
@@ -8,13 +11,11 @@ class Role extends BaseModel
 
     protected $guarded = ['id','editable'];
     
-    //Attributes
     public function givePermissionTo(Permission $permission)
     {
         return $this->permissions()->save($permission);
     }
     
-    //Relations
     public function donors()
     {
         return $this->belongsToMany(Donor::class,'donors_role','role_id','donors_id');

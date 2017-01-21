@@ -1,7 +1,7 @@
 <?php namespace App\Http\Controllers\Backend;
 
-use App\Database\Models\Donor;
-use App\Database\Repositories\DonorsRepository;
+use App\Database\Donor\Donor;
+use App\Database\Donor\DonorsRepository;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\Http\Requests\Backend\Donors\AttachDonorProfilePhotoRequest;

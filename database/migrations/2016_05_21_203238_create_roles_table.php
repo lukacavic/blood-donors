@@ -17,6 +17,7 @@ class CreateRolesTable extends Migration
             $table->string('role_title');
             $table->string('role_slug');
             $table->integer('editable')->default(0);
+            $table->integer('community_id')->unsigned();
             $table->timestamps();
         });
     }

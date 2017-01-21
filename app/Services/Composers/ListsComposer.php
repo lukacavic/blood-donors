@@ -1,11 +1,12 @@
 <?php namespace App\Services\Composers;
 
+
+use App\Database\Authorization\Permission;
+use App\Database\Authorization\Role;
+use App\Database\Donor\Donor;
+use App\Database\Donor\DonorsRepository;
+use App\Database\Location\Location;
 use App\Database\Models\BloodType;
-use App\Database\Models\Donor;
-use App\Database\Models\Location;
-use App\Database\Models\Permission;
-use App\Database\Models\Role;
-use App\Database\Repositories\DonorsRepository;
 use Illuminate\Contracts\View\View;
 
 class ListsComposer
@@ -39,6 +40,6 @@ class ListsComposer
 
     public function composerDonorsLists(View $view)
     {
-        $view->with('donors', Donor::pluck('id', 'first_name'));
+        $view->with('donors', Donor::pluck('first_name', 'id'));
     }
 }

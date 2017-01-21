@@ -106,7 +106,7 @@ class PermissionsSeeder extends Seeder
             ),
         );
 
-        \App\Database\Models\Permission::insert($data);
+        \App\Database\Authorization\Permission::insert($data);
 
 
     }

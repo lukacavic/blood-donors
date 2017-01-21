@@ -1,5 +1,7 @@
 <?php
 
+use App\Database\Authorization\Permission;
+use App\Database\Authorization\Role;
 use Illuminate\Database\Seeder;
 
 class AddPermissionsToRoles extends Seeder
@@ -11,8 +13,8 @@ class AddPermissionsToRoles extends Seeder
      */
     public function run()
     {
-        $permissions = \App\Database\Models\Permission::all();
-        $role = \App\Database\Models\Role::find(1);
+        $permissions = Permission::all();
+        $role = Role::find(1);
         $role->permissions()->attach($permissions);
     }
 }

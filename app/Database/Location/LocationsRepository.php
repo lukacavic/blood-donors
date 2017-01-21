@@ -1,5 +1,6 @@
 <?php namespace App\Database\Repositories;
 
+use App\Database\Core\BaseRepository;
 use App\Database\Models\Location;
 use App\Http\Requests\Backend\Locations\CreateNewLocationRequest;
 

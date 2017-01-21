@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Database\Models\Permission;
+use App\Database\Authorization\Permission;
 use App\Database\Models\User;
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;

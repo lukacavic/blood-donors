@@ -11,8 +11,8 @@ class AddRoleToUser extends Seeder
      */
     public function run()
     {
-        $donor = \App\Database\Models\Donor::find(1);
-        $role = \App\Database\Models\Role::find(1);
+        $donor = \App\Database\Donor\Donor::find(1);
+        $role = \App\Database\Authorization\Role::find(1);
         $donor->roles()->attach($role);
     }
 }

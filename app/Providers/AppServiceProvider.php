@@ -1,6 +1,7 @@
 <?php namespace App\Providers;
 
-use App\Database\Models\Donor;
+use App\Database\Donor\Donor;
+use App\Database\Donor\DonorObserver;
 use Carbon\Carbon;
 use Illuminate\Support\ServiceProvider;
 use View;

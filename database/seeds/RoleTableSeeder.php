@@ -33,6 +33,6 @@ class RoleTableSeeder extends Seeder
             ),
         );
 
-        \App\Database\Models\Role::insert($data);
+        \App\Database\Authorization\Role::insert($data);
     }
 }

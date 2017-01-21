@@ -18,7 +18,7 @@ class LocationsTableSeeder extends Seeder
 
         DB::table('locations')->truncate();
 
-        $location = new \App\Database\Models\Location();
+        $location = new \App\Database\Location\Location();
         $location->code = "ST";
         $location->name = "Starigrad Paklenica";
         $location->description = "Starigrad Paklenica";

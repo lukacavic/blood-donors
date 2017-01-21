@@ -22,6 +22,7 @@ class CreateActionsTable extends Migration
             $table->time('endTime')->nullable();
             $table->string('place');
             $table->text('description')->nullable();
+            $table->integer('community_id')->unsigned();
             $table->softDeletes();
             $table->timestamps();
         });

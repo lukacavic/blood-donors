@@ -16,7 +16,6 @@ class BloodTypesSeeder extends Seeder
     {
         Eloquent::unguard();
 
-
         DB::table('blood_types')->truncate();
 
         $location = new \App\Database\Models\BloodType();

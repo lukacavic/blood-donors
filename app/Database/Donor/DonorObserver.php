@@ -1,6 +1,6 @@
-<?php namespace App\Database\Observers;
+<?php
 
-use App\Database\Models\Donor;
+namespace App\Database\Donor;
 
 class DonorObserver
 {

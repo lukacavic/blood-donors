@@ -1,6 +1,8 @@
 <?php
 
-namespace App\Database\Models;
+namespace App\Database\Authorization;
+
+use App\Database\Core\BaseModel;
 
 class Permission extends BaseModel
 {
