@@ -1,0 +1,29 @@
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #d33333;
+    border-color: #d30400;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    border-radius: 0px;
+}
+
+.box {
+    border-radius: 0px;
+}
+
+.widget-user .widget-user-header {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.label {
+    border-radius: 0px;
+}
+
+.alert {
+    border-radius: 0px;
+}

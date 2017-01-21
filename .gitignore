@@ -1,0 +1,16 @@
+/BLOOD DONORS COMMUNITY MANAGEMENT.docx
+/bower_components
+/_ide_helper.php
+/.idea
+/vendor
+/node_modules
+/public/storage
+Homestead.yaml
+Homestead.json
+.env
+/storage/settings.json
+composer.lock
+/storage/installed
+/public/app/images/donors/avatars
+
+public/images/avatars/
